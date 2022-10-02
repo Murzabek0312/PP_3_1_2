@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+
+Id: <p style="display:inline" th:text="${user.getId()}" id="id">UserId</p>
+<br/>
+Имя: <p style="display:inline" th:text="${user.getName()}">UserName</p>
+<br/>
+Фамилие: <p style="display:inline" th:text="${user.getSurname()}">UserSurname</p>
+<br/>
+Возраст <p style="display:inline" th:text="${user.getAge}">UserAge</p>
+<br/>
+<br/>
+<br/>
+
+<td> <a th:href="@{/logout}">Выйти</a></td>
+</body>
+</html>
